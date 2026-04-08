@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Product Card</title>
+</head>
+<body class="bg-orange-50 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white max-w-md md:max-w-xl w-full flex flex-col md:flex-row rounded-xl overflow-hidden shadow-lg">
+        
+        <div class="md:w-1/2">
+            <img src="" 
+                 alt="Perfume" 
+                 class="hidden md:block w-full h-full object-cover">
+            <img src="" 
+                 alt="Perfume" 
+                 class="block md:hidden w-full h-60 object-cover">
+        </div>
+
+        <div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-between">
+            
+            <div>
+                <p class="text-xs tracking-[0.3em] text-stone-500 uppercase mb-3 font-medium">Perfume</p>
+                <h1 class="text-3xl font-serif font-bold text-stone-900 leading-tight mb-4">
+                    Gabrielle Essence Eau De Parfum
+                </h1>
+                <p class="text-sm text-stone-600 leading-relaxed mb-6">
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+                </p>
+            </div>
+
+            <div class="flex items-center gap-5 mb-6">
+                <span class="text-3xl font-serif font-bold text-emerald-800">$149.99</span>
+                <span class="text-stone-400 line-through text-sm">$169.99</span>
+            </div>
+
+            <button class="bg-emerald-800 hover:bg-emerald-900 transition-colors text-white font-bold py-3 px-4 rounded-lg flex items-center justify-center gap-3">
+                <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.383 10.388a2.397 2.397 0 0 0-1.511-1.591l1.147-3.357a.75.75 0 0 0-.71-.991H3.823l-.217-.652a.75.75 0 0 0-.712-.513H.75a.75.75 0 0 0 0 1.5h1.509l.746 2.239 1.104 3.312c.11.33.416.554.767.554h7.071a.75.75 0 0 0 .726-.554l.445-1.334a.896.896 0 0 1 .539.11.897.897 0 0 1 .376.712v1.258a.75.75 0 0 0 1.5 0v-1.258c0-.533-.235-1.04-.645-1.389z" fill="currentColor"/>
+                </svg>
+                Add to Cart
+            </button>
+
+        </div>
+    </div>
+
+</body>
+</html>
